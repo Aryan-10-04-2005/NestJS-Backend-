@@ -1,0 +1,28 @@
+
+> project@0.0.1 start
+> nest start
+
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +18ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCommonModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +25ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mActivityModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIssuesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIssuesController {/issues}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/issues, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/issues, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/issues/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/issues/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/issues/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17580  - [39m19/12/2025, 10:34:02 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+RolesGuard created { reflector: true, userContext: true }
+RolesGuard created { reflector: true, userContext: true }
+RolesGuard created { reflector: true, userContext: true }
+RolesGuard created { reflector: true, userContext: true }
+RolesGuard created { reflector: true, userContext: true }
+Terminate batch job (Y/N)? 
