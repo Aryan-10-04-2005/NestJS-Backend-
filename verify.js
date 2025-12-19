@@ -58,6 +58,27 @@ async function run() {
     }, { status: 'RESOLVED' });
     console.log(`[${s5}] Status is now: "${updatedIssue.status}" (✅ PASS)\n`);
 
+    // GET /:id Check
+    console.log('--- 🔍 Chapter 6: The Specifics (GET /:id) ---');
+    const { status: s6, data: fetchedIssue } = await request('GET', `/issues/${issue1.id}`, {
+        'x-org-id': 'acme-corp', 'x-user-id': 'alice', 'x-user-role': 'ADMIN'
+    });
+    console.log(`[${s6}] Fetched Issue: "${fetchedIssue.title}" (✅ PASS)\n`);
+
+    // DELETE Check (Member - Fail)
+    console.log('--- 🚫 Chapter 7: The Saboteur (DELETE - Member) ---');
+    const { status: s7 } = await request('DELETE', `/issues/${issue1.id}`, {
+        'x-org-id': 'acme-corp', 'x-user-id': 'charlie', 'x-user-role': 'MEMBER'
+    });
+    console.log(`[${s7}] Member tried to delete. Allowed? ${s7 === 200 ? 'YES (❌ FAIL)' : 'NO (✅ PASS)'}\n`);
+
+    // DELETE Check (Admin - Success)
+    console.log('--- 🗑️ Chapter 8: The Cleanup (DELETE - Admin) ---');
+    const { status: s8 } = await request('DELETE', `/issues/${issue1.id}`, {
+        'x-org-id': 'acme-corp', 'x-user-id': 'alice', 'x-user-role': 'ADMIN'
+    });
+    console.log(`[${s8}] Admin deleted issue. Status: ${s8} (✅ PASS)\n`);
+
     console.log('✅ Story Complete. System behavior verified.');
 }
 
